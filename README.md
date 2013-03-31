@@ -7,16 +7,16 @@ JSONP API:
 
 For the current bar:
 
-<code><a href="http://api.apirates.com/jsonp/update/myCallback">http://api.apirates.com/jsonp/update/myCallback</a></code>
+<code><a href="http://api.apirates.com/jsonp/update?callback=myCallback">http://api.apirates.com/jsonp/update?callback=myCallback</a></code>
 
 For history bars:
 
-<code><a href="http://api.apirates.com/jsonp/history/M1/myCallback">http://api.apirates.com/jsonp/history/M1/myCallback</a></code>
-<code><a href="http://api.apirates.com/jsonp/history/M5/myCallback">http://api.apirates.com/jsonp/history/M5/myCallback</a></code>
-<code><a href="http://api.apirates.com/jsonp/history/M10/myCallback">http://api.apirates.com/jsonp/history/M10/myCallback</a></code>
-<code><a href="http://api.apirates.com/jsonp/history/M15/myCallback">http://api.apirates.com/jsonp/history/M15/myCallback</a></code>
-<code><a href="http://api.apirates.com/jsonp/history/M30/myCallback">http://api.apirates.com/jsonp/history/M30/myCallback</a></code>
-<code><a href="http://api.apirates.com/jsonp/history/M60/myCallback">http://api.apirates.com/jsonp/history/M60/myCallback</a></code>
+<code><a href="http://api.apirates.com/jsonp/history/M1?callback=myCallback">http://api.apirates.com/jsonp/history/M1?callback=myCallback</a></code>
+<code><a href="http://api.apirates.com/jsonp/history/M5?callback=myCallback">http://api.apirates.com/jsonp/history/M5?callback=myCallback</a></code>
+<code><a href="http://api.apirates.com/jsonp/history/M10?callback=myCallback">http://api.apirates.com/jsonp/history/M10?callback=myCallback</a></code>
+<code><a href="http://api.apirates.com/jsonp/history/M15?callback=myCallback">http://api.apirates.com/jsonp/history/M15?callback=myCallback</a></code>
+<code><a href="http://api.apirates.com/jsonp/history/M30?callback=myCallback">http://api.apirates.com/jsonp/history/M30?callback=myCallback</a></code>
+<code><a href="http://api.apirates.com/jsonp/history/M60?callback=myCallback">http://api.apirates.com/jsonp/history/M60?callback=myCallback</a></code>
 
 
 <strong>How JSONP works?</strong>
@@ -24,7 +24,7 @@ For history bars:
 Add script with link to JSNOP Apirates API to your page.
 The last parameter "myCallback" can be anything else you want.
 ```
-<script type="text/javascript" src="http://api.apirates.com/jsonp/update/myCallback"></script>
+<script type="text/javascript" src="http://api.apirates.com/jsonp/update?callback=myCallback"></script>
 ```
 Then define function "myCallback" or any other function, it depends on what parameter you submited on the end of API call.
 ```
