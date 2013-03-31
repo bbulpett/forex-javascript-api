@@ -1,0 +1,24 @@
+<html>
+    <head>
+    </head>
+    <body>
+        
+        <H1>EURUSD and TIME</H1>
+        <div id = 'EURUSD'></div>
+        <div id = 'TIME'></div>
+
+         <H1>All received currencies</H1>
+        <div id = 'ApiratesFeed'></div>
+        <script>
+        function myCallback(data){
+            var text = data;
+            
+            document.getElementById('EURUSD').innerHTML = JSON.stringify(text.ticks.EURUSD);
+            document.getElementById('TIME').innerHTML = JSON.stringify(text.time.M1);
+            document.getElementById('ApiratesFeed').innerHTML = JSON.stringify(text);
+
+        }
+        </script>
+        <script type="text/javascript" src="http://api.apirates.com/jsonp/update/myCallback"></script>
+    </body>
+</html>
