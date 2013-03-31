@@ -11,12 +11,10 @@
         <div id = 'ApiratesFeed'></div>
         <script>
         function myCallback(data){
-            var text = data;
             
-            document.getElementById('EURUSD').innerHTML = JSON.stringify(text.ticks.EURUSD);
-            document.getElementById('TIME').innerHTML = JSON.stringify(text.time.M1);
-            document.getElementById('ApiratesFeed').innerHTML = JSON.stringify(text);
-
+            document.getElementById('EURUSD').innerHTML = JSON.stringify(data.ticks.EURUSD);
+            document.getElementById('TIME').innerHTML = JSON.stringify(data.time.M1);
+            document.getElementById('ApiratesFeed').innerHTML = JSON.stringify(data);
         }
         </script>
         <script type="text/javascript" src="http://api.apirates.com/jsonp/update/myCallback"></script>
