@@ -2,7 +2,7 @@ forex-javascript-api
 ====================
 
 This is example of receiving real time Forex data feed from <a href="http://apirates.com/">Apirates.com</a> in javascript using JSONP API.
-
+For jQuery version visit <a href="https://github.com/OndrejKuchta/forex-jquery-api">forex-jquery-api</a>
 JSONP API:
 
 For the current bar:
